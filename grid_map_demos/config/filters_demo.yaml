@@ -6,7 +6,8 @@ image_to_gridmap_demo:
   max_height: 1.0
 
 grid_map_visualization:
-  grid_map_topic: /grid_map_filter_demo/filtered_map
+  # grid_map_topic: /grid_map_filter_demo/filtered_map
+  grid_map_topic: /elevation_mapper/grid_map
   grid_map_visualizations:
     - name: surface_normals
       type: vectors

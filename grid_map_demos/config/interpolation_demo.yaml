@@ -1,7 +1,7 @@
 
-world: Sine # options are: Sine, Poly, Gauss, Tanh
+world: Gauss # options are: Sine, Poly, Gauss, Tanh
 
-interpolation_type: Nearest # options are: Nearest, Linear, Cubic_convolution, Cubic
+interpolation_type: Cubic # options are: Nearest, Linear, Cubic_convolution, Cubic
 
 world_size:
   length: 5.0

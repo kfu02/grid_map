@@ -1,12 +1,29 @@
-grid_map_topic: /grid_map_simple_demo/grid_map
+grid_map_topic: /elevation_mapper/grid_map
 grid_map_visualizations:
   - name: elevation_points
     type: point_cloud
     params:
      layer: elevation
-  - name: elevation_grid
-    type: occupancy_grid
+
+  - name: surface_normals
+    type: vectors
     params:
-     layer: elevation
-     data_min: 0.08
-     data_max: -0.16
+      layer_prefix: normal_vectors_
+      position_layer: elevation
+      scale: 0.06
+      line_width: 0.005
+      color: 15600153 # red
+
+  # - name: elevation_grid
+  #   type: occupancy_grid
+  #   params:
+  #    layer: elevation
+  #    data_min: 0.08
+  #    # data_max: -0.16
+  #    data_max: 120.0
+  # - name: elevation_cells
+  #   type: grid_cells
+  #   params:
+  #     layer: elevation
+  #     lower_threshold: -0.08
+  #     upper_threshold: 0.0
