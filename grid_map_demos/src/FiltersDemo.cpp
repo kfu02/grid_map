@@ -63,6 +63,10 @@ void FiltersDemo::callback(const grid_map_msgs::GridMap& message)
     return;
   }
 
+  // temp tests
+  // auto a = inputMap["elevation_inpainted"]; // throws error, "no elevation_inpainted available"
+  // auto b = outputMap["elevation_inpainted"]; // does not throw error, filterChain adds layers as needed to outputMap
+
   ROS_INFO("PUBLISH");
   // Publish filtered output grid map.
   grid_map_msgs::GridMap outputMessage;
